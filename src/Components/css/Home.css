@@ -1,0 +1,20 @@
+
+.article {
+    display: flex;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    border: 3px black solid;
+    margin: 10px; 
+}
+
+.poster > img {
+    height: 200px;
+    width: 800px;
+}
+
+.postersmall > img {
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+}
