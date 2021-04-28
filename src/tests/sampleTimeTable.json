@@ -1,0 +1,17 @@
+[
+  {
+    "days": "Monday - Thursday",
+    "times": "1630-2100",
+    "_id": 1
+  },
+  {
+    "days": "Friday - Saturday",
+    "times": "1630-2200",
+    "_id": 2
+  },
+  {
+    "days": "Sunday",
+    "times": "1630-2100",
+    "_id": 3
+  }
+]
