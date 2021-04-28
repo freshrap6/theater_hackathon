@@ -1,11 +1,11 @@
 import React from 'react';
+import TimeTableRow from './TimeTableRow';
+import PropTypes from 'prop-types';
 
-const TimeTable = () => {
-  const times = [
-    { days: 'Monday - Thursday', times: '1630-2100' },
-    { days: 'Friday - Saturday', times: '1630-2200' },
-    { days: 'Sunday', times: '1630-2100' }
-  ];
+const TimeTable = ({ data }) => {
+  const tableData = data.times.map((currEntry) => {
+    return <TimeTableRow entry={currEntry} key={currEntry._id} />
+  });
   return (
     <div className="row">
       <h3>Theater Opening Times</h3>
@@ -17,14 +17,24 @@ const TimeTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr><td>Monday</td><td>10-200</td></tr>
-          <tr><td></td><td></td></tr>
-          <tr><td></td><td></td></tr>
+          {tableData}
         </tbody>
       </table>
     </div>
   );
 
 };
+
+TimeTable.propTypes = {
+  data: PropTypes.exact({
+    times: PropTypes.arrayOf(
+      PropTypes.exact({
+        days: PropTypes.string,
+        times: PropTypes.string,
+        _id: PropTypes.number
+      })
+    )
+  })
+}
 
 export default TimeTable;
