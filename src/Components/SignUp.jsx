@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Signup = () => {
+const SignUp = () => {
     const supportedTitles = ['Mr.', 'Ms.', 'Mrs.', 'Mx.', 'Dr.', 'Other'];
     const supportedGenders = ['Woman', "Man", "Transgender", "Nonbinary", "Prefer not to respond"];
     // Form values in state
@@ -88,7 +88,7 @@ const Signup = () => {
                         id={"genderChoice" + index}
                         value={thisGender}
                         onChange={event => setGender(event.target.value)} />
-                    <label htmlFor={"genderChoice" + index}>{gender}</label>
+                    <label htmlFor={"genderChoice" + index}>{thisGender}</label>
                     </div>)}
             </div>
             <button type="submit">Sign me up!</button>
@@ -96,4 +96,4 @@ const Signup = () => {
     )
 }
 
-export default Signup;
+export default SignUp;
