@@ -1,17 +1,23 @@
 [
   {
-    "days": "Monday - Thursday",
-    "times": "1630-2100",
-    "_id": 1
+    "id": 1,
+    "_id": "5ca730905f52db3c8f637a34",
+    "day": "Monday",
+    "opening": "11:00",
+    "close": "00:00"
   },
   {
-    "days": "Friday - Saturday",
-    "times": "1630-2200",
-    "_id": 2
+    "id": 2,
+    "_id": "5ca730905f52db3c8f637a35",
+    "day": "Friday",
+    "opening": "11:00",
+    "close": "02:00"
   },
   {
-    "days": "Sunday",
-    "times": "1630-2100",
-    "_id": 3
+    "id": 3,
+    "_id": "5ca730905f52db3c8f637a36",
+    "day": "Sunday",
+    "opening": "11:00",
+    "close": "23:00"
   }
 ]

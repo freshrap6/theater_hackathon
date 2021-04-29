@@ -1,18 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import TimeModel from './TimeModel'
 
 const TimeTableRow = ({ entry }) => {
   return (
-    <tr><td>{entry.days}</td><td>{entry.times}</td></tr>
+    <tr><td>{entry.day}</td><td>{entry.opening}</td><td>{entry.close}</td></tr>
   );
 };
 
 TimeTableRow.propTypes = {
-  entry: PropTypes.exact({
-    days: PropTypes.string,
-    times: PropTypes.string,
-    _id: PropTypes.number
-  })
+  entry: PropTypes.instanceOf(TimeModel)
 }
 
 export default TimeTableRow;
